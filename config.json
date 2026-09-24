@@ -74,7 +74,7 @@
       { "id": "xxxtor", "adult": true }
     ]
   },
-  "relay": null,
+  "relay": "https://torrentstream-relay.jijaji8477-tv.workers.dev",
   "trackers": [
     "udp://tracker.opentrackr.org:1337/announce",
     "udp://open.stealth.si:80/announce",
