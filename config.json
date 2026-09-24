@@ -23,5 +23,5 @@
     "query": "collection:(feature_films) AND mediatype:(movies) AND -subject:(sex OR adult OR erotic OR nudity OR exploitation) AND -title:(sex)",
     "count": 24
   },
-  "notice": null
+  "notice": "Fetching From Server"
 }
