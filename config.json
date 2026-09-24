@@ -57,7 +57,7 @@
     "udp://open.demonii.com:1337/announce"
   ],
   "archiveHome": {
-    "enabled": true,
+    "enabled": false,
     "query": "collection:(feature_films) AND mediatype:(movies) AND -subject:(sex OR adult OR erotic OR nudity OR exploitation) AND -title:(sex)",
     "count": 24
   },
