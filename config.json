@@ -19,7 +19,7 @@
       "https://raw.githubusercontent.com/Prowlarr/Indexers/master/definitions/v11"
     ],
     "indexers": [
-      { "id": "0magnet" },
+      { "id": "0magnet", "adult": true },
       { "id": "acgrip" },
       { "id": "anibt" },
       { "id": "anisource" },
