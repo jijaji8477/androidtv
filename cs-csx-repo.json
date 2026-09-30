@@ -1,0 +1,8 @@
+{
+  "name": "CSX (SaurabhKaperwan)",
+  "description": "Bollywood: MoviesMod, VegaMovies, Bollyflix + Driveseed/Driveleech extractors. Auto-updated.",
+  "manifestVersion": 1,
+  "pluginLists": [
+    "https://raw.githubusercontent.com/SaurabhKaperwan/CSX/builds/plugins.json"
+  ]
+}
