@@ -11,9 +11,9 @@
     "nyaa": { "about": "ENGLISH · anime", "enabled": true, "mirrors": ["https://nyaa.si"] },
     "animetosho": { "about": "ENGLISH · anime", "enabled": true, "mirrors": ["https://feed.animetosho.org"] },
     "subsplease": { "about": "ENGLISH · new anime episodes", "enabled": true, "mirrors": ["https://subsplease.org"] },
-    "archive": { "about": "ENGLISH · free legal films (Internet Archive)", "enabled": true, "mirrors": ["https://archive.org"] },
-    "hdhub4u": { "about": "HINDI/DUAL AUDIO · Bollywood, dubbed, HDHub4u direct streams", "enabled": true, "mirrors": ["https://hdhub4u.ai.in", "https://hdhub4u.tv", "https://hdhub4u.frl"] }
+    "archive": { "about": "ENGLISH · free legal films (Internet Archive)", "enabled": true, "mirrors": ["https://archive.org"] }
   },
+  "_note_direct_http": "Direct-HTTP scrapers (MoviesMod, UhdMovies, 4kHDHub, AllMoviesHub) are defined in site-scrapers.json in this same repo. Domains come live from phisher98/TVVVV + Anshu78780/json, so a site rotating its URL needs no rebuild.",
   "cardigann": {
     "definitionMirrors": [
       "https://cdn.jsdelivr.net/gh/Prowlarr/Indexers@master/definitions/v11",
