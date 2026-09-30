@@ -1,0 +1,97 @@
+{
+  "version": 1,
+  "updated": "2026-09-24",
+  "sources": {
+    "knaben": { "about": "ENGLISH · all (search across many sites; has some Russian results)", "enabled": true, "mirrors": ["https://api.knaben.org"] },
+    "apibay": { "about": "ENGLISH · The Pirate Bay", "enabled": true, "mirrors": ["https://apibay.org"] },
+    "torrentsCsv": { "about": "ENGLISH · all (DHT index)", "enabled": true, "mirrors": ["https://torrents-csv.com"] },
+    "torrentio": { "about": "ENGLISH · movies (YTS, 1337x, TPB…); Hindi first", "enabled": true, "mirrors": ["https://torrentio.strem.fun/language=hindi", "https://torrentio.strem.fun"] },
+    "cinemeta": { "about": "title lookup, not a torrent source (needed for Torrentio/EZTV/posters)", "enabled": true, "mirrors": ["https://v3-cinemeta.strem.io"] },
+    "eztv": { "about": "ENGLISH · TV episodes", "enabled": true, "mirrors": ["https://eztvx.to", "https://eztv.re"] },
+    "nyaa": { "about": "ENGLISH · anime", "enabled": true, "mirrors": ["https://nyaa.si"] },
+    "animetosho": { "about": "ENGLISH · anime", "enabled": true, "mirrors": ["https://feed.animetosho.org"] },
+    "subsplease": { "about": "ENGLISH · new anime episodes", "enabled": true, "mirrors": ["https://subsplease.org"] },
+    "archive": { "about": "ENGLISH · free legal films (Internet Archive)", "enabled": true, "mirrors": ["https://archive.org"] },
+    "hdhub4u": { "about": "HINDI/DUAL AUDIO · Bollywood, dubbed, HDHub4u direct streams", "enabled": true, "mirrors": ["https://hdhub4u.frl", "https://hdhub4u.tv"] }
+  },
+  "cardigann": {
+    "definitionMirrors": [
+      "https://cdn.jsdelivr.net/gh/Prowlarr/Indexers@master/definitions/v11",
+      "https://raw.githubusercontent.com/Prowlarr/Indexers/master/definitions/v11"
+    ],
+    "groups": {
+      "english": {
+        "about": "English sites: movies, TV, anime",
+        "enabled": true,
+        "indexers": [
+          { "id": "kickasstorrents-ws", "about": "ENGLISH · movies/TV/all", "enabled": true },
+          { "id": "limetorrents", "about": "ENGLISH · movies/TV/all", "enabled": true },
+          { "id": "torrentdownload", "about": "ENGLISH · movies/TV/all", "enabled": true },
+          { "id": "filemood", "about": "ENGLISH · all (DHT search)", "enabled": true },
+          { "id": "torrentkitty", "about": "ENGLISH site · all, mostly Chinese-named results", "enabled": true },
+          { "id": "anisource", "about": "ENGLISH · anime (HD raws)", "enabled": true },
+          { "id": "bangumi-moe", "about": "ENGLISH site · anime, mostly Chinese subtitles", "enabled": true },
+          { "id": "nekobt", "about": "ENGLISH · anime", "enabled": true },
+          { "id": "shanaproject", "about": "ENGLISH · anime", "enabled": true },
+          { "id": "tokyotosho", "about": "ENGLISH · anime / Japanese", "enabled": true }
+        ]
+      },
+      "adult": {
+        "about": "18+ sites, all languages (listed last with an 18+ tag)",
+        "adult": true,
+        "enabled": true,
+        "indexers": [
+          { "id": "freejavtorrent", "about": "ENGLISH · 18+ JAV", "enabled": true },
+          { "id": "mypornclub", "about": "ENGLISH · 18+", "enabled": true },
+          { "id": "onejav", "about": "ENGLISH · 18+ JAV", "enabled": true },
+          { "id": "pornotorrent", "about": "BRAZILIAN · 18+", "enabled": true },
+          { "id": "pornxlab", "about": "ENGLISH · 18+", "enabled": true },
+          { "id": "sukebeinyaasi", "about": "ENGLISH · 18+ Asian (JAV, hentai)", "enabled": true },
+          { "id": "xxxclub", "about": "ENGLISH · 18+", "enabled": true },
+          { "id": "0magnet", "about": "CHINESE · 18+ JAV", "enabled": false },
+          { "id": "sosulki", "about": "RUSSIAN · 18+", "enabled": false },
+          { "id": "xxxtor", "about": "RUSSIAN · 18+", "enabled": false }
+        ]
+      },
+      "chinese": {
+        "about": "Chinese sites (mostly anime with Chinese subtitles)",
+        "enabled": false,
+        "indexers": [
+          { "id": "acgrip", "about": "CHINESE · anime", "enabled": true },
+          { "id": "anibt", "about": "CHINESE · anime", "enabled": true },
+          { "id": "dmhy", "about": "CHINESE (Taiwan) · anime", "enabled": true },
+          { "id": "mikan", "about": "CHINESE · anime", "enabled": true }
+        ]
+      },
+      "russian": {
+        "about": "Russian sites (Russian dubbing)",
+        "enabled": false,
+        "indexers": [
+          { "id": "bigfangroup", "about": "RUSSIAN · movies/TV (Russian dubbing)", "enabled": true }
+        ]
+      },
+      "other": {
+        "about": "Other languages (French, …)",
+        "enabled": true,
+        "indexers": [
+          { "id": "world-torrent", "about": "FRENCH · movies/TV", "enabled": true }
+        ]
+      }
+    }
+  },
+  "relay": "https://torrentstream-relay.jijaji8477-tv.workers.dev",
+  "trackers": [
+    "udp://tracker.opentrackr.org:1337/announce",
+    "udp://open.stealth.si:80/announce",
+    "udp://tracker.torrent.eu.org:451/announce",
+    "udp://exodus.desync.com:6969/announce",
+    "udp://tracker.openbittorrent.com:6969/announce",
+    "udp://open.demonii.com:1337/announce"
+  ],
+  "archiveHome": {
+    "enabled": false,
+    "query": "collection:(feature_films) AND mediatype:(movies) AND -subject:(sex OR adult OR erotic OR nudity OR exploitation) AND -title:(sex)",
+    "count": 24
+  },
+  "notice": null
+}
