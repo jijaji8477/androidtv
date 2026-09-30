@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "_note": "Site scraper rules — edit and push to jijaji8477/androidtv to update apps without a rebuild. Domain URLs come live from DomainRegistry (phisher98 + Anshu); the fallbackUrl here is only used if BOTH sources are unreachable.",
+  "sites": [
+    {
+      "id": "moviesmod",
+      "name": "MoviesMod",
+      "enabled": true,
+      "domainKeys": ["moviesmod", "Moviesmod"],
+      "fallbackUrl": "https://moviesmod.ai.in",
+      "searchPath": "/?s={query}",
+      "cardSelectors": [
+        "h2.entry-title a",
+        "h3.entry-title a",
+        "h1.entry-title a"
+      ],
+      "extractorHostPattern": "hubcloud|hubdrive|gdflix|vcloud"
+    },
+    {
+      "id": "uhdmovies",
+      "name": "UhdMovies",
+      "enabled": true,
+      "domainKeys": ["UHDMovies", "UhdMovies"],
+      "fallbackUrl": "https://uhdmovies.my",
+      "searchPath": "/?s={query}",
+      "cardSelectors": [
+        "h2.entry-title a",
+        "h3.entry-title a"
+      ],
+      "extractorHostPattern": "hubcloud|hubdrive|gdflix|vcloud"
+    },
+    {
+      "id": "fourkhdhub",
+      "name": "4kHDHub",
+      "enabled": true,
+      "domainKeys": ["4khdhub", "4kHDHub"],
+      "fallbackUrl": "https://4khdhub.one",
+      "searchPath": "/?s={query}",
+      "cardSelectors": [
+        "h2.entry-title a",
+        "h3.entry-title a",
+        ".ml-item a[href]"
+      ],
+      "extractorHostPattern": "hubcloud|hubdrive|gdflix|vcloud"
+    },
+    {
+      "id": "allmovieshub",
+      "name": "AllMoviesHub",
+      "enabled": true,
+      "domainKeys": ["allmovieshub"],
+      "fallbackUrl": "https://allmovieshub.style",
+      "searchPath": "/?s={query}",
+      "cardSelectors": [
+        "h2.entry-title a",
+        "h3.entry-title a",
+        ".gmr-listitem a"
+      ],
+      "extractorHostPattern": "hubcloud|hubdrive|gdflix|vcloud"
+    }
+  ]
+}
