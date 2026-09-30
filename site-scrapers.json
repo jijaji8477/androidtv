@@ -10,9 +10,9 @@
       "fallbackUrl": "https://moviesmod.ai.in",
       "searchPath": "/?s={query}",
       "cardSelectors": [
-        "h2.entry-title a",
-        "h3.entry-title a",
-        "h1.entry-title a"
+        ".post-cards article a[href]",
+        "article.excerpt a[href]",
+        "article.latestPost a[href]"
       ],
       "extractorHostPattern": "hubcloud|hubdrive|gdflix|vcloud"
     },
@@ -22,6 +22,22 @@
       "enabled": true,
       "domainKeys": ["UHDMovies", "UhdMovies"],
       "fallbackUrl": "https://uhdmovies.my",
+      "searchPath": "/search/{query}/",
+      "cardSelectors": [
+        "article.gridlove-post a.gridlove-image-link[href]",
+        "article a[href*='/download-']",
+        "h1.entry-title a",
+        "h2.entry-title a"
+      ],
+      "extractorHostPattern": "hubcloud|hubdrive|gdflix|vcloud"
+    },
+    {
+      "id": "fourkhdhub",
+      "name": "4kHDHub",
+      "enabled": false,
+      "_disabled_reason": "Site's ?s= endpoint returns 21KB empty page; needs different search API — investigating.",
+      "domainKeys": ["4khdhub", "4kHDHub"],
+      "fallbackUrl": "https://4khdhub.one",
       "searchPath": "/?s={query}",
       "cardSelectors": [
         "h2.entry-title a",
@@ -30,30 +46,16 @@
       "extractorHostPattern": "hubcloud|hubdrive|gdflix|vcloud"
     },
     {
-      "id": "fourkhdhub",
-      "name": "4kHDHub",
-      "enabled": true,
-      "domainKeys": ["4khdhub", "4kHDHub"],
-      "fallbackUrl": "https://4khdhub.one",
-      "searchPath": "/?s={query}",
-      "cardSelectors": [
-        "h2.entry-title a",
-        "h3.entry-title a",
-        ".ml-item a[href]"
-      ],
-      "extractorHostPattern": "hubcloud|hubdrive|gdflix|vcloud"
-    },
-    {
       "id": "allmovieshub",
       "name": "AllMoviesHub",
-      "enabled": true,
+      "enabled": false,
+      "_disabled_reason": "Site's /?s= returns homepage (46 latest posts) instead of search results — creates junk hits. Needs a different search URL or a title-match filter.",
       "domainKeys": ["allmovieshub"],
       "fallbackUrl": "https://allmovieshub.style",
       "searchPath": "/?s={query}",
       "cardSelectors": [
         "h2.entry-title a",
-        "h3.entry-title a",
-        ".gmr-listitem a"
+        "h3.entry-title a"
       ],
       "extractorHostPattern": "hubcloud|hubdrive|gdflix|vcloud"
     }
